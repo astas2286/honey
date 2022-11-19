@@ -309,10 +309,29 @@ body::after {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
+.product-popup__info__many {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 100%;
+}
 
 .product-popup__label {
   font-weight: 700;
   line-height: 1.1;
+}
+.product-popup__label__many {
+  font-size: 17px;
+  font-weight: 700;
+  flex: 50%
+}
+.product-popup__weigth__many{
+  flex: 25%;
+
+}
+.product-popup__price__many {
+  flex: 25%;
+  text-align: end;
 }
 
 .product-popup__description {
