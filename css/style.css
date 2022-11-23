@@ -311,7 +311,6 @@ body::after {
 }
 .product-popup__info__many {
   display: flex;
-  flex-wrap: wrap;
   padding: 10px;
   width: 100%;
 }
@@ -323,15 +322,18 @@ body::after {
 .product-popup__label__many {
   font-size: 17px;
   font-weight: 700;
-  flex: 50%
+  flex: 50%;
+  line-height: 1.3;
 }
 .product-popup__weigth__many{
   flex: 25%;
-
+  align-self: flex-end;
+  text-align: center;
 }
 .product-popup__price__many {
   flex: 25%;
   text-align: end;
+  align-self: flex-end;
 }
 
 .product-popup__description {
@@ -1262,6 +1264,10 @@ body::after {
   font-weight: 700;
   line-height: 128%;
   text-align: center;
+}
+
+.honey-menu__subtitle__middle{
+  margin-top: 20px;
 }
 
 .body-honey-menu {
