@@ -1,0 +1,7 @@
+1 finish with ancors on HOME PAGE
+2 Make 3 promotions on HOME PAGE
+3 finish footer ancors and social media
+4 populate footer and header
+5 make ancors for menu
+6 make fake photo for menu
+7 place real photo to menu
