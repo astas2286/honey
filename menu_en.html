@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<title>HOME</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221111105011">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		html.loaded #preloader {
+			opacity: 0;
+			overflow: hidden;
+			pointer-events: none;
+		}
+
+		#preloader {
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			overflow: hidden;
+			background-color: #000;
+			z-index: 999;
+			transition: overflow 0.5s ease 0s, opacity 0.5s ease 0s, width 0s ease 0.6s, height 0s ease 0.6s;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		#loader {
+			position: relative;
+			width: 25vw;
+			height: 25vw;
+			border-radius: 50%;
+			background: #000 url('img/logo.png') center / 45% no-repeat;
+		}
+
+		#loader::before {
+			content: "";
+			position: absolute;
+			box-sizing: border-box;
+			width: 20vw;
+			height: 20vw;
+			border-radius: 50%;
+			display: inline-block;
+			left: calc(50% - 10vw);
+			top: calc(50% - 10vw);
+			border: 3px solid;
+			border-color: #ff880099 #ff880099 transparent;
+			box-sizing: border-box;
+			animation: rotation 1.5s linear infinite;
+		}
+
+		#loader::after {
+			content: "";
+			box-sizing: border-box;
+			position: absolute;
+			z-index: 1111;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			border: 3px solid;
+			border-color: transparent #ff8a00 #ff8a00;
+			width: 25vw;
+			height: 25vw;
+			border-radius: 50%;
+			animation: rotationBack 1s linear infinite;
+			transform-origin: center center;
+		}
+
+		@keyframes rotation {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		@keyframes rotationBack {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(-360deg);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="preloader">
+		<span id="loader"></span>
+	</div>
+
+	<div class="wrapper">
+		<header data-lp class="header">
+			<div class="header__container-header">
+				<a href="index.html" class="header__logo _no-active"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture></a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="index.html" class="menu__link active">HOME</a></li>
+							<li class="menu__item"><a href="about-us.html" class="menu__link ">ABOUT US</a></li>
+							<li class="menu__item"><a href="menu.html" class="menu__link ">MENU</a></li>
+							<li class="menu__item"><a href="about-us.html#delivery" class="menu__link ">DELIVERY</a></li>
+							<li class="menu__item"><a href="index.html#promotions" class="menu__link ">PROMOTIONS</a></li>
+							<li class="menu__item"><a href="gallery.html" class="menu__link ">GALLERY</a></li>
+							<li class="menu__item"><a href="about-us.html#contacts" class="menu__link ">CONTACTS</a></li>
+
+						</ul>
+						<ul class="menu__lenguages lenguages">
+							<li class="lenguages__item"><a href="index.html" class="lenguages__link"><picture><source srcset="img/header/lng_ua.webp" type="image/webp"><img src="img/header/lng_ua.jpg" alt=""></picture></a></li>
+							<li class="lenguages__item"><a href="#" class="lenguages__link active"><picture><source srcset="img/header/lng_eng.webp" type="image/webp"><img src="img/header/lng_eng.jpg" alt=""></picture></a></li>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+		</header>
+		<main class="page page_home">
+
+			<section data-fullscreen class="page__main main-page ">
+				<div class="main-page__background-ibg">
+					<picture><source srcset="img/home-page/main/bg.webp" type="image/webp"><img src="img/home-page/main/bg.jpg" alt="background iamge"></picture>
+				</div>
+
+				<div class="main-page__body body-main-page">
+					<div class="body-main-page">
+						<div><h1 style="font-size: 20px; line-height: 25px; padding: 25px; text-align: center;">English version will appear soon, but for now, use the help of a waiter, or call the number below</h1></div>
+						<a href="tel:+380666960006" class="info-block-about__link">+38 066 696 00 06</a>					</div>
+					<div class="body-main-page__actions ">
+						<a href="index.html" class="body-main-page__link button">BACK TO UKRAINIAN VERSION</a>
+					</div>
+					<div class="body-main-page__social social">
+						<a href="https://www.instagram.com/honey_rest_uzh/" class="social__link" target="_blank"><picture><source srcset="img/social-networks/instagram.webp" type="image/webp"><img src="img/social-networks/instagram.png" alt="icon instagram"></picture></a>
+						<a href="https://www.facebook.com/HoneyRestaurantUzhgorod" class="social__link" target="_blank"><picture><source srcset="img/social-networks/facebook.webp" type="image/webp"><img src="img/social-networks/facebook.png" alt="icon facebook"></picture></a>
+					</div>
+				</div>
+
+			</section>
+
+	<script src="js/app.min.js?_v=20221111105011"></script>
+	<!-- <script async src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&_v=20221111105011"></script> -->
+</body>
+
+</html>
