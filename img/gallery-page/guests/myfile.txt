@@ -1,0 +1,15 @@
+ Volume in drive C is Windows 10
+ Volume Serial Number is A031-92F6
+
+ Directory of C:\Users\User\Documents\honey-menu-img\guests
+
+28.11.2022  19:19    <DIR>          .
+28.11.2022  19:19    <DIR>          ..
+28.11.2022  13:00           198ÿ550 IMG_1446.JPG
+28.11.2022  13:00           117ÿ030 IMG_1447.JPG
+28.11.2022  13:00           152ÿ145 IMG_1448.JPG
+28.11.2022  13:00           456ÿ833 IMG_6377.JPG
+28.11.2022  13:00           911ÿ291 IMG_6721.JPG
+28.11.2022  13:00           735ÿ848 IMG_7969.JPG
+               6 File(s)      2ÿ571ÿ697 bytes
+               2 Dir(s)  76ÿ733ÿ665ÿ280 bytes free
