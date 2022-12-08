@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>GALLERY - HONEY Restaurant & Club</title>
+	<meta name="description" content="HONEY restaurant is located in Uzhhorod on Kapushanska street, 59. We offer a spacious hall, bar, beautiful terrace, parking, grill, hookah.">
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221111105011">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		html.loaded #preloader {
+			opacity: 0;
+			overflow: hidden;
+			pointer-events: none;
+		}
+
+		#preloader {
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			overflow: hidden;
+			background-color: #000;
+			z-index: 999;
+			transition: overflow 0.5s ease 0s, opacity 0.5s ease 0s, width 0s ease 0.6s, height 0s ease 0.6s;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		#loader {
+			position: relative;
+			width: 25vw;
+			height: 25vw;
+			border-radius: 50%;
+			background: #000 url('img/logo.png') center / 45% no-repeat;
+		}
+
+		#loader::before {
+			content: "";
+			position: absolute;
+			box-sizing: border-box;
+			width: 20vw;
+			height: 20vw;
+			border-radius: 50%;
+			display: inline-block;
+			left: calc(50% - 10vw);
+			top: calc(50% - 10vw);
+			border: 3px solid;
+			border-color: #ff880099 #ff880099 transparent;
+			box-sizing: border-box;
+			animation: rotation 1.5s linear infinite;
+		}
+
+		#loader::after {
+			content: "";
+			box-sizing: border-box;
+			position: absolute;
+			z-index: 1111;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			border: 3px solid;
+			border-color: transparent #ff8a00 #ff8a00;
+			width: 25vw;
+			height: 25vw;
+			border-radius: 50%;
+			animation: rotationBack 1s linear infinite;
+			transform-origin: center center;
+		}
+
+		@keyframes rotation {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		@keyframes rotationBack {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(-360deg);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="preloader">
+		<span id="loader"></span>
+	</div>
+	<div class="wrapper">
+		<header data-lp class="header">
+			<div class="header__container-header">
+				<a href="index_en.html" class="header__logo "><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture></a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu" aria-label="burger button"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="index_en.html" class="menu__link">HOME</a></li>
+							<li class="menu__item"><a href="about-us_en.html" class="menu__link ">ABOUT US</a></li>
+							<li class="menu__item"><a href="menu_en.html" class="menu__link ">MENU</a></li>
+							<li class="menu__item"><a href="about-us_en.html#delivery" class="menu__link ">DELIVERY</a></li>
+							<li class="menu__item"><a href="index_en.html#promotions" class="menu__link ">PROMOTIONS</a></li>
+							<li class="menu__item"><a href="gallery_en.html" class="menu__link  active">GALLERY</a></li>
+							<li class="menu__item"><a href="about-us_en.html#contacts" class="menu__link ">CONTACTS</a></li>
+
+						</ul>
+						<ul class="menu__lenguages lenguages">
+							<li class="lenguages__item"><a href="index.html" class="lenguages__link"><picture><source srcset="img/header/lng_ua.webp" type="image/webp"><img src="img/header/lng_ua.jpg" alt=""></picture></a></li>
+							<li class="lenguages__item"><a href="#" class="lenguages__link active"><picture><source srcset="img/header/lng_eng.webp" type="image/webp"><img src="img/header/lng_eng.jpg" alt=""></picture></a></li>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+		</header>
+		<main class="page page_gallery">
+			<section class="page__gallery gallery">
+				<div class="gallery__container">
+					<div data-watch class="content-menu__line">
+						<button data-goto=".page" type="button" class="button-up"  aria-label="next button"><img
+								src="img/icons/arrow-circl.svg" alt="image"></button>
+					</div>
+					<h1 class="gallery__title title-h1">GALLERY</h1>
+					<div class="gallery__links">
+						<a href="gallery_en.html#cuisin" class="gallery__link">Food and drinks</a>
+						<a href="gallery_en.html#interior" class="gallery__link">Interior and exterior</a>
+						<a href="gallery_en.html#team" class="gallery__link">Our team</a>
+						<a href="gallery_en.html#guests" class="gallery__link">Events and guests</a>
+					</div><a class='ancor' name="cuisin"></a>
+					<h2 class="gallery__title title-h1"></h2>
+					<h2 class="gallery__title title-h1">Food and drinks</h2>
+					<div data-gallery class="gallery__block block-gallery">
+						<a href="img/gallery-page/cuisin/big/Honey__0001.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0001.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0001.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0002.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0002.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0002.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0003.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0003.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0003.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0004.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0004.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0004.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0005.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0005.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0005.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0006.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0006.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0006.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0007.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0007.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0007.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0008.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0008.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0008.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0009.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0009.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0009.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0010.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0010.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0010.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0011.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0011.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0011.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0012.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0012.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0012.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0013.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0013.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0013.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0014.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0014.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0014.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0015.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0015.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0015.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0016.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0016.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0016.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0017.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0017.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0017.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0018.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0018.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0018.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0019.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0019.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0019.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0020.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0020.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0020.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0021.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0021.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0021.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0022.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0022.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0022.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0023.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0023.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0023.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0024.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0024.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0024.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0025.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0025.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0025.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0026.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0026.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0026.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0027.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0027.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0027.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0028.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0028.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0028.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0029.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0029.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0029.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0030.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0030.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0030.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0031.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0031.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0031.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0032.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0032.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0032.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0033.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0033.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0033.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0034.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0034.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0034.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0035.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0035.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0035.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0036.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0036.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0036.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0037.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0037.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0037.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0038.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0038.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0038.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0039.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0039.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0039.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0040.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0040.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0040.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0041.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0041.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0041.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0042.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0042.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0042.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0043.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0043.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0043.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0044.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0044.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0044.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0045.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0045.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0045.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0046.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0046.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0046.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0047.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0047.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0047.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0048.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0048.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0048.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0049.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0049.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0049.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0050.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0050.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0050.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0051.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0051.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0051.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0052.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0052.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0052.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0053.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0053.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0053.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0054.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0054.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0054.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0055.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0055.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0055.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0056.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0056.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0056.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0057.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0057.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0057.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0058.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0058.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0058.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0059.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0059.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0059.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0060.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0060.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0060.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0061.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0061.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0061.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0062.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0062.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0062.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0063.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0063.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0063.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/Honey__0064.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/Honey__0064.webp" type="image/webp"><img src="img/gallery-page/guests/small/Honey__0064.jpg" alt="image dish"></picture></a>
+				  
+						<a href="img/gallery-page/cuisin/big/IMG_0064.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_0064.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_0064.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_0125.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_0125.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_0125.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_0157.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_0157.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_0157.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_0969.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_0969.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_0969.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_3719.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_3719.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_3719.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_3762.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_3762.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_3762.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_3776.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_3776.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_3776.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_3780.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_3780.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_3780.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_3802.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_3802.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_3802.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_3816.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_3816.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_3816.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_3822.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_3822.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_3822.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_3840.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_3840.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_3840.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_3875.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_3875.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_3875.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_3886.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_3886.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_3886.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_3894.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_3894.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_3894.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_4677.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_4677.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_4677.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_4680.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_4680.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_4680.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_4685.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_4685.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_4685.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_4689.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_4689.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_4689.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_4723.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_4723.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_4723.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_4725.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_4725.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_4725.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_4733.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_4733.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_4733.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_4734.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_4734.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_4734.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_7964.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_7964.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_7964.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_7985.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_7985.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_7985.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_8003.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_8003.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_8003.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_8037.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_8037.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_8037.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_8059.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_8059.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_8059.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_8069.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_8069.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_8069.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_8627.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_8627.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_8627.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_8641.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_8641.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_8641.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_8647.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_8647.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_8647.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_8649.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_8649.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_8649.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_8683(1).jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_8683(1).webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_8683(1).jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_8683.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_8683.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_8683.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_8696.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_8696.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_8696.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_8762.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_8762.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_8762.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_9071(1).jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_9071(1).webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_9071(1).jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_9089.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_9089.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_9089.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_9103.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_9103.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_9103.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_9118.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_9118.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_9118.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_9130.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_9130.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_9130.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_9133.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_9133.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_9133.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_9167.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_9167.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_9167.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_9700.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_9700.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_9700.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_9751.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_9751.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_9751.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_9795.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_9795.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_9795.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_9816.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_9816.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_9816.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_9823.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_9823.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_9823.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/cuisin/big/IMG_9884.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_9884.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_9884.jpg" alt="image dish"></picture></a>
+							<a href="img/gallery-page/cuisin/big/IMG_9960.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/cuisin/small/IMG_9960.webp" type="image/webp"><img src="img/gallery-page/cuisin/small/IMG_9960.jpg" alt="image dish"></picture></a>
+									  </div><a class='ancor' name="interior"></a>
+					<h2 class="gallery__title title-h1"></h2>
+					<h2 class="gallery__title title-h1">Interior and exterior</h2>
+					<div data-gallery class="gallery__block block-gallery">
+						<a href="img/gallery-page/interior/big/IMG_0129.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_0129.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_0129.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_0201.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_0201.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_0201.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_0998.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_0998.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_0998.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_3722.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_3722.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_3722.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_3729.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_3729.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_3729.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4647.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4647.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4647.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4650.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4650.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4650.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4654.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4654.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4654.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4659.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4659.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4659.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4660.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4660.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4660.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4662.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4662.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4662.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4667.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4667.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4667.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4687.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4687.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4687.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4709.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4709.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4709.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4712.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4712.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4712.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4715.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4715.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4715.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4749.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4749.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4749.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4756.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4756.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4756.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4757.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4757.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4757.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4759.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4759.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4759.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4760.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4760.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4760.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4763.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4763.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4763.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4767.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4767.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4767.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4772.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4772.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4772.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4777.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4777.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4777.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4779.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4779.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4779.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4781.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4781.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4781.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4784.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4784.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4784.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4787.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4787.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4787.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4788.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4788.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4788.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4790.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4790.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4790.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4794.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4794.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4794.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_4795.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_4795.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_4795.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_7080.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_7080.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_7080.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_7956.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_7956.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_7956.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_8716.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_8716.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_8716.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_8734.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_8734.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_8734.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_8765.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_8765.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_8765.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_8767.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_8767.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_8767.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_8770.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_8770.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_8770.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_9070.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_9070.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_9070.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_9071.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_9071.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_9071.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_9141.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_9141.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_9141.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_9863.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_9863.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_9863.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_9870.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_9870.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_9870.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/interior/big/IMG_9876.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_9876.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_9876.jpg" alt="image dish"></picture></a>
+							<a href="img/gallery-page/interior/big/IMG_9995.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/interior/small/IMG_9995.webp" type="image/webp"><img src="img/gallery-page/interior/small/IMG_9995.jpg" alt="image dish"></picture></a>
+														 </div>
+														 <a class='ancor' name="team"></a>
+					<h2 class="gallery__title title-h1"></h2>
+					<h2 class="gallery__title title-h1">Our team</h2>
+					<div data-gallery class="gallery__block block-gallery">
+						<a href="img/gallery-page/team/big/IMG_6587.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/team/small/IMG_6587.webp" type="image/webp"><img src="img/gallery-page/team/small/IMG_6587.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/team/big/IMG_6588.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/team/small/IMG_6588.webp" type="image/webp"><img src="img/gallery-page/team/small/IMG_6588.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/team/big/IMG_6590.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/team/small/IMG_6590.webp" type="image/webp"><img src="img/gallery-page/team/small/IMG_6590.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/team/big/IMG_8015.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/team/small/IMG_8015.webp" type="image/webp"><img src="img/gallery-page/team/small/IMG_8015.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/team/big/IMG_8774.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/team/small/IMG_8774.webp" type="image/webp"><img src="img/gallery-page/team/small/IMG_8774.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/team/big/IMG_8798.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/team/small/IMG_8798.webp" type="image/webp"><img src="img/gallery-page/team/small/IMG_8798.jpg" alt="image dish"></picture></a>
+							<a href="img/gallery-page/team/big/IMG_9120.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/team/small/IMG_9120.webp" type="image/webp"><img src="img/gallery-page/team/small/IMG_9120.jpg" alt="image dish"></picture></a>
+																			</div>
+																			<a class='ancor' name="guests"></a>
+					<h2 class="gallery__title title-h1"></h2>
+					<h2 class="gallery__title title-h1">Events and guests</h2>
+					<div data-gallery class="gallery__block block-gallery">
+						<a href="img/gallery-page/guests/big/IMG_1446.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/guests/small/IMG_1446.webp" type="image/webp"><img src="img/gallery-page/guests/small/IMG_1446.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/guests/big/IMG_1447.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/guests/small/IMG_1447.webp" type="image/webp"><img src="img/gallery-page/guests/small/IMG_1447.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/guests/big/IMG_1448.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/guests/small/IMG_1448.webp" type="image/webp"><img src="img/gallery-page/guests/small/IMG_1448.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/guests/big/IMG_6377.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/guests/small/IMG_6377.webp" type="image/webp"><img src="img/gallery-page/guests/small/IMG_6377.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/guests/big/IMG_6721.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/guests/small/IMG_6721.webp" type="image/webp"><img src="img/gallery-page/guests/small/IMG_6721.jpg" alt="image dish"></picture></a>
+				  <a href="img/gallery-page/guests/big/IMG_7969.jpg" class="block-gallery__image">
+							<picture><source srcset="img/gallery-page/guests/small/IMG_7969.webp" type="image/webp"><img src="img/gallery-page/guests/small/IMG_7969.jpg" alt="image dish"></picture></a>
+																							  </div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container-about">
+				<div class="footer__about">
+					<a href="index_en.html" class="footer__logo _no-active"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="image logo"></picture></a>
+					<div class="footer__desctription">
+						<p>Honey Restaurant & Club Restaurant and terrace, located in Uzhhorod. Cozy atmosphere, friendly staff and unsurpassed dishes.</p>
+						<p>We accept pre-orders for corporate events, birthdays, weddings, family holidays and parties. We are open for you every day from 11:00 to 00:00!
+						</p>
+					</div>
+				</div>
+				<nav class="footer__menu menu-footer">
+					<ul class="menu-footer__list">
+						<li class="menu-footer__item"><a href="index_en.html" class="menu-footer__link">HOME</a></li>
+						<li class="menu-footer__item"><a href="about-us_en.html" class="menu-footer__link ">ABOUT US</a></li>
+						<li class="menu-footer__item"><a href="menu_en.html" class="menu-footer__link ">MENU</a></li>
+						<li class="menu-footer__item"><a href="about-us_en.html#delivery" class="menu-footer__link">DELIVERY</a></li>
+						<li class="menu-footer__item"><a href="index_en.html#promotions" class="menu-footer__link">PROMOTIONS</a></li>
+						<li class="menu-footer__item"><a href="gallery_en.html" class="menu-footer__link  active">GALLERY</a></li>
+						<li class="menu-footer__item"><a href="about-us_en.html#contacts" class="menu-footer__link">CONTACTS</a></li>
+					</ul>
+				</nav>
+				<div class="footer__info info-footer">
+					<div class="info-footer__item">
+						<div class="info-footer__label">Phone</div>
+						<a href="tel:+380666960006" class="info-footer__link">+38 066 696 00 06</a>
+					</div>
+					<div class="info-footer__item">
+						<div class="info-footer__label">Email</div>
+						<a href="mailto:honey.uzhgorod@gmail.com" class="info-footer__link">honey.uzhgorod@gmail.com</a>
+					</div>
+					<div class="info-footer__item">
+						<div class="info-footer__label">Address</div>
+						<div class="info-footer__address">Uzhgorod, <br>Kapushanska str., 59</div>
+					</div>
+					<div class="info-footer__social social">
+						<a href="https://www.instagram.com/honey_rest_uzh/" class="social__link" target="_blank"><picture><source srcset="img/social-networks/instagram.webp" type="image/webp"><img src="img/social-networks/instagram.png" alt="icon instagram"></picture></a>
+						<a href="https://www.facebook.com/HoneyRestaurantUzhgorod" class="social__link" target="_blank"><picture><source srcset="img/social-networks/facebook.webp" type="image/webp"><img src="img/social-networks/facebook.png" alt="icon facebook"></picture></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20221111105011"></script>
+	<!-- <script async src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&_v=20221111105011"></script> -->
+</body>
+
+</html>

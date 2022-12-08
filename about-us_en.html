@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>ABOUT US - HONEY Restaurant & Club</title>
+	<meta name="description" content="HONEY restaurant is located in Uzhhorod on Kapushanska street, 59. We offer a spacious hall, bar, beautiful terrace, parking, grill, hookah.">
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221111105011">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		html.loaded #preloader {
+			opacity: 0;
+			overflow: hidden;
+			pointer-events: none;
+		}
+
+		#preloader {
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			overflow: hidden;
+			background-color: #000;
+			z-index: 999;
+			transition: overflow 0.5s ease 0s, opacity 0.5s ease 0s, width 0s ease 0.6s, height 0s ease 0.6s;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		#loader {
+			position: relative;
+			width: 25vw;
+			height: 25vw;
+			border-radius: 50%;
+			background: #000 url('img/logo.png') center / 45% no-repeat;
+		}
+
+		#loader::before {
+			content: "";
+			position: absolute;
+			box-sizing: border-box;
+			width: 20vw;
+			height: 20vw;
+			border-radius: 50%;
+			display: inline-block;
+			left: calc(50% - 10vw);
+			top: calc(50% - 10vw);
+			border: 3px solid;
+			border-color: #ff880099 #ff880099 transparent;
+			box-sizing: border-box;
+			animation: rotation 1.5s linear infinite;
+		}
+
+		#loader::after {
+			content: "";
+			box-sizing: border-box;
+			position: absolute;
+			z-index: 1111;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			border: 3px solid;
+			border-color: transparent #ff8a00 #ff8a00;
+			width: 25vw;
+			height: 25vw;
+			border-radius: 50%;
+			animation: rotationBack 1s linear infinite;
+			transform-origin: center center;
+		}
+
+		@keyframes rotation {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		@keyframes rotationBack {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(-360deg);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="preloader">
+		<span id="loader"></span>
+	</div>
+	<div class="wrapper ">
+		<header data-lp class="header">
+			<div class="header__container-header">
+				<a href="index_en.html" class="header__logo "><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture></a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu" aria-label="burger button"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="index_en.html" class="menu__link">HOME</a></li>
+							<li class="menu__item"><a href="about-us_en.html" class="menu__link  active">ABOUT US</a></li>
+							<li class="menu__item"><a href="menu_en.html" class="menu__link ">MENU</a></li>
+							<li class="menu__item"><a href="about-us_en.html#delivery" class="menu__link ">DELIVERY</a></li>
+							<li class="menu__item"><a href="index_en.html#promotions" class="menu__link ">PROMOTIONS</a></li>
+							<li class="menu__item"><a href="gallery_en.html" class="menu__link ">GALLERY</a></li>
+							<li class="menu__item"><a href="about-us_en.html#contacts" class="menu__link ">CONTACTS</a></li>
+
+						</ul>
+						<ul class="menu__lenguages lenguages">
+							<li class="lenguages__item"><a href="index.html" class="lenguages__link"><picture><source srcset="img/header/lng_ua.webp" type="image/webp"><img src="img/header/lng_ua.jpg" alt=""></picture></a></li>
+							<li class="lenguages__item"><a href="#" class="lenguages__link active"><picture><source srcset="img/header/lng_eng.webp" type="image/webp"><img src="img/header/lng_eng.jpg" alt=""></picture></a></li>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+		</header>
+		<main class="page page_about-us-page">
+			<section class="page__about-us-page about-us-page">
+				<div class="about-us-page__container-header">
+					<div class="about-us-page__header">
+						<h1 class="about-us-page__title title-h1">ABOUT US</h1>
+						<div class="about-us-page__description">Honey is a full-fledged restaurant family that welcomes every guest, attentive to his wishes and makes his stay in the restaurant as comfortable as possible. Each member of our team is a top-class specialist, time-tested. Each employee is an important element in the work of a powerful restaurant mechanism.</div>
+					</div>
+					<div class="about-us-page__block block-about">
+						<div class="block-about__content">
+							<div class="block-about__logo">
+								<a class='ancor' name="contacts"></a>
+								<picture><source srcset="img/logo-big.webp" type="image/webp"><img src="img/logo-big.png" alt="big logo"></picture>
+							</div>
+							<ul class="block-about__info info-block-about">
+								<li>
+									<div class="info-block-about__caption">HONEY Restaurant & Club</div>
+								</li>
+								<a class='ancor' name="delivery"></a>
+								<li><a href="tel:+380666960006" class="info-block-about__link">+38 066 696 00 06</a></li>
+								<li><a href="mailto:honey.uzhgorod@gmail.com" class="info-block-about__link">honey.uzhgorod@gmail.com</a></li>
+								<li>
+									<div class="info-block-about__address">Uzhgorod, apushanska str., 59</div>
+								</li>
+								<li><a href="https://www.instagram.com/honey_rest_uzh/" target="_blank" class="info-block-about__instagram">INSTAGRAM</a></li>
+								<li><a href="https://www.facebook.com/HoneyRestaurantUzhgorod" target="_blank" class="info-block-about__facebook">FACEBOOK</a></li>
+							</ul>
+						</div>
+						<div class="block-about__pictures pictures-about">
+							<div class="pictures-about__image-ibg"><picture><source srcset="img/about-us-page/01.webp" type="image/webp"><img src="img/about-us-page/01.jpg" alt="main image"></picture></div>
+							<div class="pictures-about__image-ibg"><picture><source srcset="img/about-us-page/02.webp" type="image/webp"><img src="img/about-us-page/02.jpg" alt="image"></picture></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__delivery delivery">
+				<div class="delivery__header">
+					<h2 class="delivery__title title-h1">HONEY DELIVERY</h2>
+					<div class="delivery__description">
+						<p>To order delivery, just select dishes from the menu and call <a href="tel:+380666960006">+38 066 696 00 06</a></p>
+						<p>We will offer the best delivery and payment option</p>
+					</div>
+				</div>
+				<div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=honey uzhghorod&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://piratebay-proxys.com/">Piratebay</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container-about">
+				<div class="footer__about">
+					<a href="index_en.html" class="footer__logo _no-active"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="image logo"></picture></a>
+					<div class="footer__desctription">
+						<p>Honey Restaurant & Club Restaurant and terrace, located in Uzhhorod. Cozy atmosphere, friendly staff and unsurpassed dishes.</p>
+						<p>We accept pre-orders for corporate events, birthdays, weddings, family holidays and parties. We are open for you every day from 11:00 to 00:00!
+						</p>
+					</div>
+				</div>
+				<nav class="footer__menu menu-footer">
+					<ul class="menu-footer__list">
+						<li class="menu-footer__item"><a href="index_en.html" class="menu-footer__link">HOME</a></li>
+						<li class="menu-footer__item"><a href="about-us_en.html" class="menu-footer__link  active">ABOUT US</a></li>
+						<li class="menu-footer__item"><a href="menu_en.html" class="menu-footer__link ">MENU</a></li>
+						<li class="menu-footer__item"><a href="about-us_en.html#delivery" class="menu-footer__link">DELIVERY</a></li>
+						<li class="menu-footer__item"><a href="index_en.html#promotions" class="menu-footer__link">PROMOTIONS</a></li>
+						<li class="menu-footer__item"><a href="gallery_en.html" class="menu-footer__link ">GALLERY</a></li>
+						<li class="menu-footer__item"><a href="about-us_en.html#contacts" class="menu-footer__link">CONTACTS</a></li>
+					</ul>
+				</nav>
+				<div class="footer__info info-footer">
+					<div class="info-footer__item">
+						<div class="info-footer__label">Phone</div>
+						<a href="tel:+380666960006" class="info-footer__link">+38 066 696 00 06</a>
+					</div>
+					<div class="info-footer__item">
+						<div class="info-footer__label">Email</div>
+						<a href="mailto:honey.uzhgorod@gmail.com" class="info-footer__link">honey.uzhgorod@gmail.com</a>
+					</div>
+					<div class="info-footer__item">
+						<div class="info-footer__label">Address</div>
+						<div class="info-footer__address">Uzhgorod, <br>Kapushanska str., 59</div>
+					</div>
+					<div class="info-footer__social social">
+						<a href="https://www.instagram.com/honey_rest_uzh/" class="social__link" target="_blank"><picture><source srcset="img/social-networks/instagram.webp" type="image/webp"><img src="img/social-networks/instagram.png" alt="icon instagram"></picture></a>
+						<a href="https://www.facebook.com/HoneyRestaurantUzhgorod" class="social__link" target="_blank"><picture><source srcset="img/social-networks/facebook.webp" type="image/webp"><img src="img/social-networks/facebook.png" alt="icon facebook"></picture></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20221111105011"></script>
+	<!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeBZAdfDP1bqja3K0SJA5pfQzB93xJcg4&callback&callback=initMap&_v=20221111105011"></script> -->
+
+</body>
+
+</html>
